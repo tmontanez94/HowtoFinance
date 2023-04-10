@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/calculator.css" />
+    <title>Compound Interest Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="calculatorContainer">
+        <h1 class="heading">Compound Interest Calculator</h1>
+        <p class="smallHeading">Enter values and click Calculate</p>
+        <h2 class="heading1">Initial Investment</h2>
+        <section class="singleInput">
+          <h3 class="inputHeading">Amount Invested</h3>
+          <input type="text" placeholder="$" class="input" id="initialInvestment" />
+        </section>
+        <section class="singleInput">
+          <h3 class="inputHeading">Monthly Contributions</h3>
+          <input
+            type="text"
+            placeholder="$"
+            class="input"
+            id="monthlyContribution"
+          />
+        </section>
+        <section class="singleInput">
+          <h3 class="inputHeading">Time (in years)</h3>
+          <input type="text" placeholder="Years" class="input" id="timeInYears" />
+        </section>
+        <section class="singleInput">
+          <h3 class="inputHeading">Interest Rate</h3>
+          <input type="text" placeholder="%" class="input" id="interestRate" />
+        </section>
+        <button class="button" id="calculateButton">Calculate</button>
+      </section>
+      <!-- displaying the results -->
+      <section class="resultsCalculator">
+        <h2 class="resultHeading" id="futureValue">Future Value : $0</h2>
+        <section class="singleResult">
+          <p class="singleResultPara">Total Contributions</p>
+          <p class="singleResultPara" id="totalContributions">$0</p>
+        </section>
+        <section class="singleResult">
+          <p class="singleResultPara">Percentage Difference</p>
+          <p class="singleResultPara" id="percentageDifference">0%</p>
+        </section>
+      </section>
+    </div>
+    <script src="./assets/js/calculatorInvestment.js"></script>
+  </body>
+</html>
