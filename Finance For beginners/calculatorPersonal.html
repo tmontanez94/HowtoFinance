@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/calculator.css" />
+    <title>Personal Loan Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="calculatorContainer">
+        <h1 class="heading">Personal Loan Calculator</h1>
+        <p class="smallHeading">Modify values and click Calculate</p>
+        <h2 class="heading1">Loan Information</h2>
+        <section class="singleInput">
+          <h3 class="inputHeading">Loan Amount</h3>
+          <input type="text" placeholder="$" class="input" id="loanAmount" />
+        </section>
+        <section class="singleInput">
+          <h3 class="inputHeading">Loan Terms</h3>
+          <input
+            type="text"
+            placeholder="Months"
+            class="input"
+            id="loanTerms"
+          />
+        </section>
+        <section class="singleInput">
+          <h3 class="inputHeading">Interest Rate</h3>
+          <input type="text" placeholder="%" class="input" id="interestRate" />
+        </section>
+        <button class="button" id="calculateButton">Calculate</button>
+      </section>
+      <!-- displaying the results -->
+      <section class="resultsCalculator">
+        <h2 class="resultHeading" id="monthlyPay">Monthly Payment: $0</h2>
+        <section class="singleResult">
+          <p class="singleResultPara">Total Interest Paid</p>
+          <p class="singleResultPara" id="totalInterestPaid">$0</p>
+        </section>
+        <section class="singleResult">
+          <p class="singleResultPara">Total Cost</p>
+          <p class="singleResultPara" id="totalCost">$0</p>
+        </section>
+      </section>
+    </div>
+    <script src="./assets/js/calculatorPersonal.js"></script>
+  </body>
+</html>
